@@ -1,0 +1,20 @@
+<ion-content ng-cloak>
+<div>
+  <div>
+    <p color="primary">Title</p>
+    <input [(ngModel)]="editor.name" placeholder="Name">
+  </div>
+  <div>
+      <p color="primary">Location</p>
+      <input [(ngModel)]="editor.location" placeholder="Location">
+    </div>
+  <div>
+      <p color="primary">People Needed</p>
+      <input [(ngModel)]="editor.spaceAmount" placeholder="Spaces">
+  </div>
+  <button class="button" (click)="submit()">
+      Submit
+  </button>
+</div>
+</ion-content>
+  

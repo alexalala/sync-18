@@ -9,6 +9,7 @@ import { EventFiltersComponent } from './components/event-filters/event-filters.
 import { SharedModule } from '../shared/shared.module';
 import { EventSummaryComponent } from './components/event-summary/event-summary.component';
 import { ChatModule } from '../chat/chat.module';
+import { AddEventComponent } from './components/add-event/add-event.component';
 
 @NgModule({
   imports: [
@@ -23,12 +24,16 @@ import { ChatModule } from '../chat/chat.module';
         component: EventsComponent
       },
       {
-        path: ':id',
+        path: 'view/:id',
         component: EventSummaryComponent
       },
       {
         path: 'filters',
         component: EventFiltersComponent
+      },
+      {
+        path: 'add',
+        component: AddEventComponent
       },
     ])
   ],
@@ -37,6 +42,7 @@ import { ChatModule } from '../chat/chat.module';
     EventsComponent,
     EventFiltersComponent,
     EventSummaryComponent,
+    AddEventComponent,
   ]
 })
 export class EventModule { }

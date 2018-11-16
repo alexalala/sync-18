@@ -23,7 +23,7 @@ export class EventComponent implements OnInit {
   }
 
   pushEvent () {
-    this.router.navigateByUrl(`events/${this.event.id}`);
+    this.router.navigateByUrl(`events/view/${this.event.id}`);
   }
 
 }

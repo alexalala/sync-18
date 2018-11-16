@@ -18,6 +18,11 @@ export class EventsComponent implements OnInit {
     }
 
   ngOnInit() {
+
+  }
+
+  addEvent () {
+    this.router.navigateByUrl(`events/add`);
   }
 
 }
