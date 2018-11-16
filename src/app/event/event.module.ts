@@ -6,12 +6,14 @@ import { EventComponent } from './components/event/event.component';
 import { RouterModule } from '@angular/router';
 import { EventsComponent } from './components/events/events.component';
 import { EventFiltersComponent } from './components/event-filters/event-filters.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    SharedModule,
     RouterModule.forChild([
       {
         path: '',

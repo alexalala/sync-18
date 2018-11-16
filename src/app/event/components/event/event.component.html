@@ -1,3 +1,11 @@
-<p>
-  event works!
-</p>
+<ion-card>
+    <img [src]="event.imageUrl"/>
+    <ion-card-content>
+      <ion-card-title>
+        {{event.name}}
+        </ion-card-title>
+      <p>
+        {{event.location}}
+      </p>
+    </ion-card-content>
+  </ion-card>

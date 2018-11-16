@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DummyDataService } from '../../../services/dummy-data.service';
 
 @Component({
   selector: 'app-events',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public dummyDataService: DummyDataService
+    ) {
+
+    }
 
   ngOnInit() {
   }
