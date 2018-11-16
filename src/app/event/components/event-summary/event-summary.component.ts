@@ -17,7 +17,6 @@ export class EventSummaryComponent implements OnInit {
     public dummyDataService: DummyDataService,
     private route: ActivatedRoute,
   ) {
-
   }
 
   ngOnInit() {
