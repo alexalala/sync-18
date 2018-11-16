@@ -21,7 +21,7 @@ export class EventSummaryComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.route.queryParamMap.subscribe(params => {
+    this.route.paramMap.subscribe(params => {
       this.id = +params.get('id');
       this.event = this.dummyDataService.getById(this.id);
     });

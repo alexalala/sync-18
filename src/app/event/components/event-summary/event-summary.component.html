@@ -1,3 +1,21 @@
-<p>
-  event-summary works!
-</p>
+<ion-content ng-cloak>
+  <ion-row>
+<h2 class="title">
+  {{ event.name }}
+</h2>
+</ion-row>
+
+<ion-row>
+  <ion-col col-6>
+      <p>
+          {{event.location}}
+        </p>
+    <p>People Going: {{event.goingAmount}}</p>
+    <p>Spaces Left: {{event.spaceAmount}}</p>
+  </ion-col>
+  <ion-col col-6>
+    <img [src]="event.imageUrl">
+    </ion-col>
+</ion-row>
+
+</ion-content>
