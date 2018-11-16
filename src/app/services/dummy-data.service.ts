@@ -18,6 +18,21 @@ constructor() {
       goingAmount: 6,
       spaceAmount: 6,
       imageUrl: 'assets/image-1.jpg',
+      chatArea: {
+        title: 'Football Lads',
+        messages: [
+          {
+            username: 'Bob',
+            message: `I can't wait to play tonight`,
+            imageUrl: 'assets/image-1.jpg'
+          },
+          {
+            username: 'Tim',
+            message: `I'll bring the ball`,
+            imageUrl: 'assets/image-1.jpg'
+          }
+        ]
+      }
     },
     {
       id: 1,
@@ -26,6 +41,21 @@ constructor() {
       goingAmount: 11,
       spaceAmount: 1,
       imageUrl: 'assets/image-6.jpg',
+      chatArea: {
+        title: 'Football Lads',
+        messages: [
+          {
+            username: 'Bob',
+            message: `I can't wait to play tonight`,
+            imageUrl: 'assets/image-1.jpg'
+          },
+          {
+            username: 'Tim',
+            message: `I'll bring the ball`,
+            imageUrl: 'assets/image-1.jpg'
+          }
+        ]
+      }
     },
     {
       id: 2,
@@ -34,6 +64,21 @@ constructor() {
       goingAmount: 3,
       spaceAmount: 9,
       imageUrl: 'assets/image-2.jpg',
+      chatArea: {
+        title: 'Football Lads',
+        messages: [
+          {
+            username: 'Bob',
+            message: `I can't wait to play tonight`,
+            imageUrl: 'assets/image-1.jpg'
+          },
+          {
+            username: 'Tim',
+            message: `I'll bring the ball`,
+            imageUrl: 'assets/image-1.jpg'
+          }
+        ]
+      }
     }
   ];
 }

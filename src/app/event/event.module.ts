@@ -8,6 +8,7 @@ import { EventsComponent } from './components/events/events.component';
 import { EventFiltersComponent } from './components/event-filters/event-filters.component';
 import { SharedModule } from '../shared/shared.module';
 import { EventSummaryComponent } from './components/event-summary/event-summary.component';
+import { ChatModule } from '../chat/chat.module';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { EventSummaryComponent } from './components/event-summary/event-summary.
     FormsModule,
     IonicModule,
     SharedModule,
+    ChatModule,
     RouterModule.forChild([
       {
         path: '',
