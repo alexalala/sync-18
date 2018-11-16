@@ -2,3 +2,27 @@
     width: 100%;
     text-align: center;
 }
+
+.event-info {
+    background-color: #39b54a47;
+    display: flex;
+
+    .image-container {
+        padding: 0;
+
+        img {
+            height: 20rem;
+        }
+    }
+
+    .copy {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            margin: 1rem 3rem;
+        }
+    }
+}
