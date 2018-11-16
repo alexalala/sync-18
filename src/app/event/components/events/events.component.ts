@@ -14,10 +14,15 @@ export class EventsComponent implements OnInit {
     public dummyDataService: DummyDataService,
     public router: Router,
     ) {
-      
+
     }
 
   ngOnInit() {
+
+  }
+
+  addEvent () {
+    this.router.navigateByUrl(`events/add`);
   }
 
 }

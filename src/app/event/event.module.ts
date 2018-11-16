@@ -24,7 +24,7 @@ import { AddEventComponent } from './components/add-event/add-event.component';
         component: EventsComponent
       },
       {
-        path: ':id',
+        path: 'view/:id',
         component: EventSummaryComponent
       },
       {
