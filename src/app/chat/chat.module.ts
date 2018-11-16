@@ -5,6 +5,7 @@ import { CommentComponent } from './components/comment/comment.component';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { SharedModule } from '../shared/shared.module';
+import { AddCommentComponent } from './components/add-comment/add-comment.component';
 
 @NgModule({
   imports: [
@@ -12,14 +13,17 @@ import { SharedModule } from '../shared/shared.module';
     FormsModule,
     IonicModule,
     SharedModule,
+    FormsModule
   ],
   declarations: [
     ChatAreaComponent,
-    CommentComponent
+    CommentComponent,
+    AddCommentComponent
   ],
   exports: [
     ChatAreaComponent,
-    CommentComponent
+    CommentComponent,
+    AddCommentComponent
   ]
 })
 export class ChatModule { }

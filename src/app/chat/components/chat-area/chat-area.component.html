@@ -1,3 +1,5 @@
 <h2 class="title" > {{chatArea.title}}</h2>
 
 <app-comment [comment]="comment" *ngFor="let comment of chatArea.messages" ></app-comment>
+
+<app-add-comment [eventId]="eventId">  </app-add-comment>
