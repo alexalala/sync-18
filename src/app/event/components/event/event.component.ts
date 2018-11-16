@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Event } from '../../events.models';
+import { DummyDataService } from '../../../services/dummy-data.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-event',
@@ -10,10 +12,19 @@ export class EventComponent implements OnInit {
 
   @Input() event: Event;
 
-  constructor() { }
+  constructor(
+    public dummyDataService: DummyDataService,
+    public router: Router,
+  ) {
+
+  }
 
   ngOnInit() {
 
+  }
+
+  pushEvent () {
+    this.router.navigateByUrl(`events/${this.event.id}`);
   }
 
 }

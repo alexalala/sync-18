@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { EventsComponent } from './components/events/events.component';
 import { EventFiltersComponent } from './components/event-filters/event-filters.component';
 import { SharedModule } from '../shared/shared.module';
+import { EventSummaryComponent } from './components/event-summary/event-summary.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import { SharedModule } from '../shared/shared.module';
       },
       {
         path: ':id',
-        component: EventComponent
+        component: EventSummaryComponent
       },
       {
         path: 'filters',
@@ -33,6 +34,7 @@ import { SharedModule } from '../shared/shared.module';
     EventComponent,
     EventsComponent,
     EventFiltersComponent,
+    EventSummaryComponent,
   ]
 })
 export class EventModule { }
