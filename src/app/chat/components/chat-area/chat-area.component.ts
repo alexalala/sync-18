@@ -9,6 +9,7 @@ import { ChatArea } from '../../../event/events.models';
 export class ChatAreaComponent implements OnInit {
 
   @Input() chatArea: ChatArea;
+  @Input() eventId: number;
 
   constructor() { }
 
