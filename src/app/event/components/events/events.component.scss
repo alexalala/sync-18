@@ -1,0 +1,9 @@
+.event-container {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .event-container {
+        flex-direction: column;
+    }
+}

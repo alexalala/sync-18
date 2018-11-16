@@ -43,9 +43,14 @@ body {
     h1 {
         margin: 1rem;
     }
-    
-    img {
-        height: 2rem;
-        margin: 1rem;
+
+    img.logo {
+        height: 3rem;
+        margin: 0.5rem;
+    }
+
+    img.burger {
+        height: 1.5rem;
+        margin: 1.5rem;
     }
 }
