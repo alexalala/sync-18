@@ -100,4 +100,16 @@ events: Event[] = [];
   addEvent(editor: Event) {
     this.events.push(editor);
   }
+
+  getLatestEventId (): number {
+    let latestId = 0;
+    this.events.forEach(element => {
+      if (element.id > latestId) {
+        latestId = element.id;
+      }
+    });
+    latestId++;
+    return latestId;
+  }
+
 }

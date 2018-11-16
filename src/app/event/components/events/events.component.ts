@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-events',
   templateUrl: './events.component.html',
-  styleUrls: ['./events.component.css']
+  styleUrls: ['./events.component.scss']
 })
 export class EventsComponent implements OnInit {
 
@@ -14,7 +14,7 @@ export class EventsComponent implements OnInit {
     public dummyDataService: DummyDataService,
     public router: Router,
     ) {
-
+      
     }
 
   ngOnInit() {
