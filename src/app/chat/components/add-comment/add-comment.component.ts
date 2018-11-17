@@ -14,7 +14,7 @@ export class AddCommentComponent implements OnInit {
   commentEditor: Message = new Message();
 
   constructor(
-    public dummyDataService: DummyDataService,
+    private dummyDataService: DummyDataService,
   ) { }
 
   ngOnInit() {
@@ -22,7 +22,7 @@ export class AddCommentComponent implements OnInit {
 
   submit () {
     let editor = cloneDeep(this.commentEditor);
-    editor.username = 'Jake';
+    editor.username = this.dummyDataService.user.name;
     editor.imageUrl = 'assets/image-1.jpg';
     this.dummyDataService.addMessage(this.eventId, editor);
 

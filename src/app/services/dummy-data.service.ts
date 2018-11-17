@@ -143,4 +143,8 @@ user: User = new User();
     return latestId;
   }
 
+  saveUser (editor: User) {
+    this.user = editor;
+  }
+
 }

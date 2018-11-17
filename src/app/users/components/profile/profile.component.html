@@ -8,12 +8,12 @@
         <div class="mx-3 mt-2">
             <div class="form-group">
               <label for="exampleInputEmail1">Name</label>
-              <input [(ngModel)]="user.name"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Age</label>
-            <input [(ngModel)]="user.age"  type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter people needed">
-        </div>
-        </div>
+              <input disabled='true' [(ngModel)]="dummyDataService.user.name"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Age</label>
+              <input disabled='true' [(ngModel)]="dummyDataService.user.age"  type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter people needed">
+            </div>
+          </div>
     </ion-grid>
 </ion-content>
