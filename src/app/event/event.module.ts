@@ -10,6 +10,7 @@ import { SharedModule } from '../shared/shared.module';
 import { EventSummaryComponent } from './components/event-summary/event-summary.component';
 import { ChatModule } from '../chat/chat.module';
 import { AddEventComponent } from './components/add-event/add-event.component';
+import { BookComponent } from './components/book/book.component';
 
 @NgModule({
   imports: [
@@ -43,6 +44,7 @@ import { AddEventComponent } from './components/add-event/add-event.component';
     EventFiltersComponent,
     EventSummaryComponent,
     AddEventComponent,
+    BookComponent
   ]
 })
 export class EventModule { }
