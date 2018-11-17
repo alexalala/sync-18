@@ -1,9 +1,9 @@
 <ion-content ng-cloak>
-<div>
-<button (click)="addEvent()" class="max-width button">
-  Add Event
-</button>
-</div>
+    <div class="add-event-container">
+        <button (click)="addEvent()" class="max-width button">
+            Add New Event
+        </button>
+    </div>
     <div class="event-container">
         <app-event *ngFor="let event of dummyDataService.events" [event]="event"> </app-event>
     </div>
