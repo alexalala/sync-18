@@ -1,23 +1,23 @@
 <ion-content ng-cloak>
-    <ion-grid class="outer-container">
-        <ion-row class="mt-1">
+    <div class="summary-section">
+        <div>
             <h2 class="title mb-2 mt-0">
                 {{ event.name }}
             </h2>
-        </ion-row>
 
-        <div class="event-info">
-            <div class="image-container">
-                <img [src]="event.imageUrl">
-            </div>
-            <div class="copy">
-                <p><b>Address:</b> {{event.location}}</p>
-                <p><b>People Going:</b> {{event.goingAmount}}</p>
-                <p><b>Spaces Left:</b> {{event.spaceAmount}}</p>
+            <div class="event-info">
+                <div class="image-container">
+                    <img [src]="event.imageUrl">
+                </div>
+                <div class="copy">
+                    <p><b>Address:</b> {{event.location}}</p>
+                    <p><b>People Going:</b> {{event.goingAmount}}</p>
+                    <p><b>Spaces Left:</b> {{event.spaceAmount}}</p>
+                </div>
             </div>
         </div>
 
         <app-chat-area [chatArea]="event.chatArea" [eventId]="id">
         </app-chat-area>
-    </ion-grid>
+    </div>
 </ion-content>

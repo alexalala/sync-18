@@ -17,6 +17,11 @@
     color: #fff;
     font-family: arial;
     position:relative;
+
+    > div {
+        text-align: left;
+        padding: 0 1rem;
+    }
 }
 
 .sb2:before {
