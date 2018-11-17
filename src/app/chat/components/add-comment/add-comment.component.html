@@ -1,7 +1,6 @@
-<div>
-  <p color="primary">Message</p>
-  <input [(ngModel)]="commentEditor.message" placeholder="...">
-</div>
-<button class="button" (click)="submit()">
-    Submit
-  </button>
+<div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button (click)="submit()" class="btn btn-outline-secondary" type="button">Submit</button>
+      </div>
+      <input [(ngModel)]="commentEditor.message"  type="text" class="form-control" placeholder="Message" aria-label="" aria-describedby="basic-addon1">
+    </div>

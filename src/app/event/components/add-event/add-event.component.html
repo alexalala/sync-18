@@ -1,20 +1,19 @@
 <ion-content ng-cloak>
-<div>
-  <div>
-    <p color="primary">Title</p>
-    <input [(ngModel)]="editor.name" placeholder="Name">
-  </div>
-  <div>
-      <p color="primary">Location</p>
-      <input [(ngModel)]="editor.location" placeholder="Location">
-    </div>
-  <div>
-      <p color="primary">People Needed</p>
-      <input [(ngModel)]="editor.spaceAmount" placeholder="Spaces">
-  </div>
-  <button class="button" (click)="submit()">
-      Submit
-  </button>
-</div>
+    <form class="mx-3 mt-2">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Title</label>
+          <input [(ngModel)]="editor.name"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Location</label>
+            <input [(ngModel)]="editor.location"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter location">
+          </div>
+          <div class="form-group">
+              <label for="exampleInputEmail1">People Needed</label>
+              <input [(ngModel)]="editor.spaceAmount"  type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter people needed">
+            </div>
+            <button type="button" class="btn btn-success w-100" (click)="submit()">     
+                Submit</button>
+            </form>
 </ion-content>
   
