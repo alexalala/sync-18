@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Event, Message } from '../event/events.models';
+import { Event, Message, User } from '../event/events.models';
 import { pipe } from '@angular/core/src/render3/pipe';
 
 @Injectable({
@@ -9,7 +9,15 @@ export class DummyDataService {
 
 events: Event[] = [];
 
+user: User = new User();
+
   constructor() {
+
+    this.user = {
+      name: 'Jake',
+      age: 13,
+    };
+
     this.events = [
       {
         id: 0,
@@ -23,14 +31,9 @@ events: Event[] = [];
           messages: [
             {
               username: 'Bob',
-              message: `I can't wait to play tonight`,
-              imageUrl: 'assets/image-1.jpg'
+              message: `This match is going to be the best!`,
+              imageUrl: 'assets/image-3.jpg'
             },
-            {
-              username: 'Tim',
-              message: `I'll bring the ball`,
-              imageUrl: 'assets/image-1.jpg'
-            }
           ]
         }
       },
@@ -45,14 +48,14 @@ events: Event[] = [];
           title: 'Event Chat',
           messages: [
             {
-              username: 'Bob',
-              message: `I can't wait to play tonight`,
-              imageUrl: 'assets/image-1.jpg'
+              username: 'Tim',
+              message: `Anyone else want to play 4 a side instead?`,
+              imageUrl: 'assets/image-6.jpg'
             },
             {
               username: 'Tim',
-              message: `I'll bring the ball`,
-              imageUrl: 'assets/image-1.jpg'
+              message: `Guys?`,
+              imageUrl: 'assets/image-6.jpg'
             }
           ]
         }
@@ -70,13 +73,41 @@ events: Event[] = [];
             {
               username: 'Bob',
               message: `I can't wait to play tonight`,
-              imageUrl: 'assets/image-1.jpg'
+              imageUrl: 'assets/image-5.jpg'
             },
             {
               username: 'Tim',
               message: `I'll bring the ball`,
-              imageUrl: 'assets/image-1.jpg'
+              imageUrl: 'assets/image-6.jpg'
             }
+          ]
+        }
+      },
+      {
+        id: 3,
+        name: 'Northgate Highschool',
+        location: 'Dereham',
+        goingAmount: 4,
+        spaceAmount: 1,
+        imageUrl: 'assets/image-3.jpg',
+        chatArea: {
+          title: 'Football Lads',
+          messages: [
+            {
+              username: 'Bob',
+              message: `I can't play tonight anymore guys`,
+              imageUrl: 'assets/image-5.jpg'
+            },
+            {
+              username: 'Les',
+              message: `Why not?`,
+              imageUrl: 'assets/image-3.jpg'
+            },
+            {
+              username: 'Bob',
+              message: `I've got a broken leg...`,
+              imageUrl: 'assets/image-5.jpg'
+            },
           ]
         }
       }
@@ -110,6 +141,10 @@ events: Event[] = [];
     });
     latestId++;
     return latestId;
+  }
+
+  saveUser (editor: User) {
+    this.user = editor;
   }
 
 }

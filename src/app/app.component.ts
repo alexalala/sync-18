@@ -31,4 +31,8 @@ export class AppComponent {
     this.router.navigateByUrl('events');
   }
 
+  profile () {
+    this.router.navigateByUrl('user/profile');
+  }
+
 }

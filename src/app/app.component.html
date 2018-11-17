@@ -2,8 +2,10 @@
   <ion-header>
   <div class="toolbar">
       <img (click)="home()" class="logo" src="assets/icons/kickabout-logo-white.png">
-      <img class="burger" src="assets/icons/burger-menu.png">
+      <button (click)="profile()" type="button" class="btn float-right primary-background" style="color: white;">     
+          <b>Profile</b></button>
   </div>
+
   </ion-header>
   <ion-content>
     <ion-router-outlet></ion-router-outlet>

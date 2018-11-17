@@ -1,7 +1,7 @@
 <ion-content ng-cloak>
     <h2>Add new event</h2>
     <div class="add">
-        <form class="mx-3 mt-2">
+        <div class="form">
             <div class="form-group">
               <label for="exampleInputEmail1">Event Title</label>
               <input [(ngModel)]="editor.name"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter event title">
@@ -16,6 +16,6 @@
                 </div>
                 <button type="button" class="btn btn-success w-100" (click)="submit()">
                     Submit</button>
-                </form>
+                </div>
     </div>
 </ion-content>
