@@ -22,11 +22,12 @@ export class AddCommentComponent implements OnInit {
 
   submit () {
     let editor = cloneDeep(this.commentEditor);
+    this.commentEditor.message = '';
     editor.username = this.dummyDataService.user.name;
     editor.imageUrl = 'assets/image-1.jpg';
     this.dummyDataService.addMessage(this.eventId, editor);
 
-    const random = Math.floor( Math.random() * 5);
+    const random = Math.floor( Math.random() * 6);
 
     setTimeout(() => {
     if (random === 0) {
@@ -53,6 +54,32 @@ export class AddCommentComponent implements OnInit {
       editor.username = 'Todd';
       editor.imageUrl = 'assets/image-3.jpg';
       this.dummyDataService.addMessage(this.eventId, editor);
+    } else if (random === 4) {
+      editor = new Message();
+      editor.message = `Does anyone think they can beat me?`;
+      editor.username = 'Todd';
+      editor.imageUrl = 'assets/image-3.jpg';
+      this.dummyDataService.addMessage(this.eventId, editor);
+      setTimeout(() => {
+        editor = new Message();
+        editor.message = `I definitely will!`;
+        editor.username = 'Jim';
+        editor.imageUrl = 'assets/image-4.jpg';
+        this.dummyDataService.addMessage(this.eventId, editor);
+      }, 800);
+    } else if (random === 5) {
+      editor = new Message();
+      editor.message = `Can I play up-front tonight?`;
+      editor.username = 'Beth';
+      editor.imageUrl = 'assets/image-2.jpg';
+      this.dummyDataService.addMessage(this.eventId, editor);
+      setTimeout(() => {
+        editor = new Message();
+        editor.message = `Yeah, sure, I'll go in goal!`;
+        editor.username = 'Jim';
+        editor.imageUrl = 'assets/image-4.jpg';
+        this.dummyDataService.addMessage(this.eventId, editor);
+      }, 800);
     }
   }, 800);
   }
