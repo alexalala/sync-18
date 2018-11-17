@@ -19,7 +19,7 @@ events: Event[] = [];
         spaceAmount: 6,
         imageUrl: 'assets/image-1.jpg',
         chatArea: {
-          title: 'Football Lads',
+          title: 'Event Chat',
           messages: [
             {
               username: 'Bob',
@@ -42,7 +42,7 @@ events: Event[] = [];
         spaceAmount: 1,
         imageUrl: 'assets/image-6.jpg',
         chatArea: {
-          title: 'Football Lads',
+          title: 'Event Chat',
           messages: [
             {
               username: 'Bob',
@@ -65,7 +65,7 @@ events: Event[] = [];
         spaceAmount: 9,
         imageUrl: 'assets/image-2.jpg',
         chatArea: {
-          title: 'Football Lads',
+          title: 'Event Chat',
           messages: [
             {
               username: 'Bob',
