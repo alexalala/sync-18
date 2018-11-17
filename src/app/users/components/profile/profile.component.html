@@ -1,5 +1,19 @@
 <ion-content ng-cloak>
-<p>
-  profile works!
-</p>
+    <ion-grid>
+        <div class="event-info mt-1">
+            <div class="image-container mx-auto d-block">
+                <img class="rounded-circle" src='assets/image-1.jpg'>
+            </div>
+        </div>
+        <div class="mx-3 mt-2">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name</label>
+              <input [(ngModel)]="user.name"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Age</label>
+            <input [(ngModel)]="user.age"  type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter people needed">
+        </div>
+        </div>
+    </ion-grid>
 </ion-content>

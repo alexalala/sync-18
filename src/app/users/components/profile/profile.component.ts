@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../../../event/events.models';
+import { DummyDataService } from '../../../services/dummy-data.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  user: User = new User();
+
+  constructor(
+    public dummyDataService: DummyDataService,
+  ) { }
 
   ngOnInit() {
-    
+    this.user = this.dummyDataService.user;
   }
 
 }

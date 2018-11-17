@@ -18,3 +18,8 @@ export class Message {
     imageUrl: string;
     username: string;
 }
+
+export class User {
+    name: string;
+    age: number;
+}
