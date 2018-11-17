@@ -29,6 +29,7 @@ export class AddEventComponent implements OnInit {
     this.editor.imageUrl = 'assets/image-5.jpg';
     this.editor.goingAmount = 0;
     this.editor.chatArea = new ChatArea();
+    this.editor.chatArea.title = 'Chat';
     this.editor = cloneDeep(this.editor);
     this.dummyDataService.addEvent(this.editor);
     this.router.navigateByUrl('events');

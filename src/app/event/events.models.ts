@@ -5,12 +5,12 @@ export class Event {
     goingAmount: number;
     spaceAmount: number;
     imageUrl: string;
-    chatArea: ChatArea;
+    chatArea: ChatArea = new ChatArea();
 }
 
 export class ChatArea {
-    title: string;
-    messages: Message[];
+    title = 'Chat';
+    messages: Message[] = [];
 }
 
 export class Message {
