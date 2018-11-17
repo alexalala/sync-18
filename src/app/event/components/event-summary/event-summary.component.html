@@ -1,31 +1,23 @@
 <ion-content ng-cloak>
-  <ion-row>
-<h2 class="title">
-  {{ event.name }}
-</h2>
-</ion-row>
+    <ion-grid>
+        <ion-row>
+            <h2 class="title">
+                {{ event.name }}
+            </h2>
+        </ion-row>
 
-<ion-row>
-  <button class="button">
-    Book Now
-  </button>
-</ion-row>
+        <div class="event-info">
+            <div class="image-container">
+                <img [src]="event.imageUrl">
+            </div>
+            <div class="copy">
+                <p><b>Address:</b> {{event.location}}</p>
+                <p><b>People Going:</b> {{event.goingAmount}}</p>
+                <p><b>Spaces Left:</b> {{event.spaceAmount}}</p>
+            </div>
+        </div>
 
-<ion-row>
-  <ion-col col-6>
-      <p>
-          {{event.location}}
-        </p>
-    <p>People Going: {{event.goingAmount}}</p>
-    <p>Spaces Left: {{event.spaceAmount}}</p>
-  </ion-col>
-  <ion-col col-6>
-    <img [src]="event.imageUrl">
-    </ion-col>
-</ion-row>
-
-<app-chat-area [chatArea]="event.chatArea" [eventId]="id">
-
-</app-chat-area>
-
+        <app-chat-area [chatArea]="event.chatArea" [eventId]="id">
+        </app-chat-area>
+    </ion-grid>
 </ion-content>
