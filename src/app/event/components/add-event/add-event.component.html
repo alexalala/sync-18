@@ -1,0 +1,21 @@
+<ion-content ng-cloak>
+    <h2>Add new event</h2>
+    <div class="add mx-2">
+        <div class="form">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Event Title</label>
+              <input [(ngModel)]="editor.name"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter event title">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Location</label>
+                <input [(ngModel)]="editor.location"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter address of venue">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Amount of players</label>
+                  <input [(ngModel)]="editor.spaceAmount"  type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter amount of players needed">
+                </div>
+                <button type="button" class="btn btn-success w-100" (click)="submit()">
+                    Submit</button>
+                </div>
+    </div>
+</ion-content>

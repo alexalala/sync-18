@@ -10,3 +10,61 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.primary-background {
+    background-color: #39b54a;
+}
+
+.primary-color {
+    color:  #39b54a;
+}
+
+.scroll-content {
+    overflow-y: scroll;
+}
+
+.ion-page {
+    overflow: auto;
+}
+
+.header {
+    background-color: #39b54a;
+}
+
+.button {
+    height: 35px;
+    background-color: #39b54a;
+    margin-top: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.toolbar {
+    margin: 0.5rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        margin: 1rem;
+    }
+
+    img.logo {
+        height: 2.5rem;
+    }
+
+    img.burger {
+        height: 1.5rem;
+        margin: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .event-container,
+    .event-info {
+        flex-direction: column;
+    }
+}

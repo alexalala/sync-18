@@ -1,0 +1,14 @@
+<ion-card (click)="pushEvent()" class="event">
+    <img [src]="event.imageUrl"/>
+    <ion-card-content>
+      <ion-card-title>
+        {{event.name}}
+        </ion-card-title>
+      <p>
+        {{event.location}}
+      </p>
+      <p class="float-right large-margin-bottom">
+        {{event.goingAmount}}/{{event.goingAmount + event.spaceAmount}}
+      </p>
+    </ion-card-content>
+</ion-card>
